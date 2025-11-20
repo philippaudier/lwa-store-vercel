@@ -21,7 +21,11 @@ export function Header() {
 
     return (
         <>
-            <header className="sticky top-0 z-50 apple-blur bg-primary/80 border-b border-default">
+            <header className="sticky top-0 z-50 border-b border-default" style={{
+                backdropFilter: 'blur(20px) saturate(180%)',
+                WebkitBackdropFilter: 'blur(20px) saturate(180%)',
+                backgroundColor: 'rgba(var(--color-bg-primary), 0.8)'
+            }}>
                 <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
                     <div className="flex justify-between items-center h-18" style={{ height: 'var(--header-height)' }}>
                         {/* Logo */}
